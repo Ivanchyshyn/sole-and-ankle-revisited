@@ -3,8 +3,6 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 
-import {COLORS, WEIGHTS} from '../../constants';
-
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
@@ -45,7 +43,7 @@ const Overlay = styled(DialogOverlay)`
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(0deg 0% 0% / 0.5);
+  background: var(--color-black-transparent);
 `
 
 const Content = styled(DialogContent)`
@@ -64,6 +62,9 @@ const Content = styled(DialogContent)`
 
 const CloseButton = styled(UnstyledButton)`
   margin-left: auto;
+  margin-right: -12px;
+  margin-top: -12px;
+  padding: 12px;
 `
 
 const Menu = styled.nav`
@@ -79,11 +80,11 @@ const MenuLink = styled.a`
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[900]};
-  font-weight: ${WEIGHTS.medium};
+  color: var(--color-gray-900);
+  font-weight: var(--weight-medium);
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `
 
@@ -96,8 +97,8 @@ const Footer = styled.footer`
 const FooterLink = styled.a`
   font-size: 0.875rem;
   text-decoration: none;
-  color: ${COLORS.gray[700]};
-  font-weight: ${WEIGHTS.normal};
+  color: var(--color-gray-700);
+  font-weight: var(--weight-normal);
   line-height: 16px;
 `
 

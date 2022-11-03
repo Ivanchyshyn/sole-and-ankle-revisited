@@ -71,6 +71,23 @@ html {
     Silence the warning about missing Reach Dialog styles
   */
   --reach-dialog: 1;
+  
+  /* COLORS */
+  --dark-blue-hue: 220deg;
+  --color-white: hsl(0deg 0% 100%);
+  --color-gray-100: hsl(185deg 5% 95%);
+  --color-gray-300: hsl(190deg 5% 80%);
+  --color-gray-500: hsl(196deg 4% 60%);
+  --color-gray-700: hsl(var(--dark-blue-hue) 5% 40%);
+  --color-gray-900: hsl(var(--dark-blue-hue) 3% 20%);
+  --color-primary: hsl(340deg 65% 47%);
+  --color-secondary: hsl(240deg 60% 63%);
+  --color-black-transparent: hsl(var(--dark-blue-hue) 6% 40% / 80%);
+  
+  /* WEIGHTS */
+  --weight-normal: 500;
+  --weight-medium: 600;
+  --weight-bold: 800;
 }
 
 html, body, #root {
